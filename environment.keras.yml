@@ -1,0 +1,22 @@
+name: keras-dakar-nowcasting
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - matplotlib
+  - pandas
+  - numpy
+  - xarray
+  - scikit-learn
+  - seaborn
+  - netcdf4
+  - graphviz
+  - gpustat
+  - tensorflow-gpu=2.10.0
+  - keras
+  - pip>=20.1  # pip is needed as dependency
+  - pip:
+    - "git+https://github.com/leifdenby/nb_black/#egg=nb_black"
+    - ipykernel
+    - pydot
